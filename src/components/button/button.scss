@@ -1,0 +1,102 @@
+@import '../../scss/config.scss';
+
+.vumo-button {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 .8rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+  }
+
+  &:not([disabled]):active::after {
+    opacity: .2;
+  }
+  
+  &[disabled] {
+    opacity: .6;
+  }
+
+  &-default {
+    border: 1px solid #ddd;
+    color: #4c4c4c;
+    background-color: transparent;
+  }
+
+  &-primary {
+    background-color: $color-primary;
+
+    &.is-light {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      background-color: transparent;
+    }
+  }
+
+  &-warning {
+    background-color: $color-warning;
+
+    &.is-light {
+      border: 1px solid $color-warning;
+      color: $color-warning;
+      background-color: transparent;
+    }
+  }
+
+  &-success {
+    background-color: $color-success;
+
+    &.is-light {
+      border: 1px solid $color-success;
+      color: $color-success;
+      background-color: transparent;
+    }
+  }
+
+  &-danger {
+    background-color: $color-danger;
+
+    &.is-light {
+      border: 1px solid $color-danger;
+      color: $color-danger;
+      background-color: transparent;
+    }
+  }
+
+  &-large {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  &-medium {
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  &-small {
+    display: inline-block;
+    font-size: 14px;
+    height: 2rem;
+  }
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+}
