@@ -1,0 +1,48 @@
+@import "../../scss/config.scss";
+
+.vumo-switch {
+  display: inline-block;
+  vertical-align: middle;
+
+  &-input {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    width: 3.2rem;
+    height: 2rem;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    border-radius: 1rem;
+    vertical-align: middle;
+    background-color: #fff;
+    transition: background-color .3s ease, border-color .3s ease;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.9rem;
+      height: 1.9rem;
+      border-radius: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+      background-color: #fff;
+      transition: transform .3s ease;
+    }
+
+    &:checked {
+      background-color: $color-primary;
+      border-color: $color-primary;
+
+      &::after {
+        transform: translate3d(1.2rem, 0, 0);
+      }
+    }
+
+    &:disabled {
+      opacity: .6;
+    }
+  }
+}
