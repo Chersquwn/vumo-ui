@@ -1,0 +1,82 @@
+.vumo-toast {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1001;
+  padding: 1.25rem;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(18, 18, 18, .7);
+
+  &-text {
+    margin: 0;
+  }
+
+  &-mask {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  &.is-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  &.is-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  &.is-middle {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.is-square {
+    min-width: 7.6rem;
+    min-height: 7.6rem;
+  }
+
+  &.vumo-slide-from-top-enter,
+  &.vumo-slide-from-top-leave-active {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  &.vumo-slide-from-top-enter-active,
+  &.vumo-slide-from-top-leave-active {
+    transition: all .3s ease;
+  }
+
+  &.vumo-slide-from-bottom-enter,
+  &.vumo-slide-from-bottom-leave-active {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &.vumo-slide-from-bottom-enter-active,
+  &.vumo-slide-from-bottom-leave-active {
+    transition: all .3s ease;
+  }
+
+  &.vumo-pop-from-middle-enter,
+  &.vumo-pop-from-middle-leave-active {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.8);
+  }
+
+  &.vumo-pop-from-middle-enter-active,
+  &.vumo-pop-from-middle-leave-active {
+    transition: all .3s ease;
+  }
+}
