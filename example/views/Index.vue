@@ -14,6 +14,21 @@
           Switch
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/checklist">
+          Checklist
+        </router-link>
+      </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/radiolist">
+          Radiolist
+        </router-link>
+      </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/toast">
+          Toast
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

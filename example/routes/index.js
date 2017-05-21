@@ -1,6 +1,9 @@
 import Index from '../views/Index'
 import Buttons from '../views/Buttons'
 import Switch from '../views/Switch'
+import Checklist from '../views/Checklist'
+import Radiolist from '../views/Radiolist'
+import Toast from '../views/Toast'
 
 const routes = [
   {
@@ -17,6 +20,21 @@ const routes = [
     path: '/switch',
     name: 'switch',
     component: Switch
+  },
+  {
+    path: '/checklist',
+    name: 'checklist',
+    component: Checklist
+  },
+  {
+    path: '/radiolist',
+    name: 'radiolist',
+    component: Radiolist
+  },
+  {
+    path: '/toast',
+    name: 'toast',
+    component: Toast
   }
 ]
 

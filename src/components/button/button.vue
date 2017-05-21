@@ -48,5 +48,5 @@
 </script>
 
 <style lang="scss">
-  @import './button.scss'
+  @import './button.scss';
 </style>
