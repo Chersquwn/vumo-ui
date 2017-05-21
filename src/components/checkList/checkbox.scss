@@ -1,0 +1,76 @@
+@import "../../scss/config.scss";
+
+.vumo-checklist {
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+
+  .vumo-checkbox {
+    padding: .5rem .625rem;
+  }
+}
+
+.vumo-checkbox {
+  display: block;
+
+  &-input {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 1rem;
+    vertical-align: middle;
+    background-color: #fff;
+    transition: background-color .3s ease,
+      border-color .3s ease;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: .6rem;
+      left: .2rem;
+      width: 2px;
+      height: 0;
+      background-color: #fff;
+      transform: rotate(-45deg);
+      transition: height .15s ease;
+      transform-origin: left top;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: .9rem;
+      left: .5rem;
+      width: 2px;
+      height: 0;
+      background-color: #fff;
+      transform: rotate(-135deg);
+      transition: height .15s ease .1s;
+      transform-origin: left top;
+    }
+
+    &:checked {
+      background-color: $color-primary;
+      border-color: $color-primary;
+
+      &::before {
+        height: .4rem;
+      }
+
+      &::after {
+        height: .6rem;
+      }
+    }
+
+    &:disabled {
+      background-color: #dcdcdc;
+    }
+  }
+}
