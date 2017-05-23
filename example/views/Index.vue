@@ -29,6 +29,16 @@
           Toast
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/slider">
+          Slider
+        </router-link>
+      </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/viewpager">
+          ViewPager
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

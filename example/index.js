@@ -7,7 +7,12 @@ import {
   Checklist,
   Radio,
   Radiolist,
-  Toast
+  Toast,
+  Slider,
+  SliderItem,
+  ViewPager,
+  ViewPagerItem,
+  ViewPagerTab
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -25,6 +30,11 @@ Vue.component(Checklist.name, Checklist)
 Vue.component(Radio.name, Radio)
 Vue.component(Radiolist.name, Radiolist)
 Vue.component(Toast.name, Toast)
+Vue.component(Slider.name, Slider)
+Vue.component(SliderItem.name, SliderItem)
+Vue.component(ViewPager.name, ViewPager)
+Vue.component(ViewPagerItem.name, ViewPagerItem)
+Vue.component(ViewPagerTab.name, ViewPagerTab)
 
 new Vue({
   router,

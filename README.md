@@ -7,8 +7,8 @@ A mobile web UI library with Vue.js
 - [x] Checklist
 - [x] Switch
 - [x] Toast
-- [ ] Slider
-- [ ] Viewpager
+- [x] Slider
+- [x] Viewpager
 - [ ] Picker
 - [ ] Scrollview
 - [ ] Modal

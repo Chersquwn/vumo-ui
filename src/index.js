@@ -3,6 +3,8 @@ import Switch from 'components/switch'
 import { Checkbox, Checklist } from 'components/checklist'
 import { Radio, Radiolist } from 'components/radiolist'
 import Toast from 'components/toast'
+import { Slider, SliderItem } from 'components/slider'
+import { ViewPager, ViewPagerItem, ViewPagerTab } from 'components/view-pager'
 
 export {
   Button,
@@ -11,5 +13,10 @@ export {
   Checklist,
   Radio, 
   Radiolist,
-  Toast
+  Toast,
+  Slider,
+  SliderItem,
+  ViewPager,
+  ViewPagerItem,
+  ViewPagerTab
 }

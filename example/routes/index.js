@@ -4,6 +4,8 @@ import Switch from '../views/Switch'
 import Checklist from '../views/Checklist'
 import Radiolist from '../views/Radiolist'
 import Toast from '../views/Toast'
+import Slider from '../views/Slider'
+import ViewPager from '../views/ViewPager'
 
 const routes = [
   {
@@ -35,6 +37,16 @@ const routes = [
     path: '/toast',
     name: 'toast',
     component: Toast
+  },
+  {
+    path: '/slider',
+    name: 'slider',
+    component: Slider
+  },
+  {
+    path: '/viewpager',
+    name: 'viewpager',
+    component: ViewPager
   }
 ]
 
