@@ -1,0 +1,42 @@
+.vumo-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &-list {
+    position: relative;
+  }
+
+  &-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    > * {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-nav {
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+
+    &-item {
+      display: inline-block;
+      background-color: #fff;
+      margin: 0 3px;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      transition: all .2s ease;
+
+      &.is-active {
+        background-color: #999;
+        transform: scale(2);
+      }
+    }
+  }
+}
