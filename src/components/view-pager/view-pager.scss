@@ -1,0 +1,53 @@
+@import "../../scss/config.scss";
+
+.vumo-viewpager {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  &.is-top {
+    .vumo-viewpager-tabbar {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &.is-bottom {
+    flex-direction: column-reverse;
+
+    .vumo-viewpager-tabbar {
+      box-shadow: 0 -3px 6px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &-tabbar {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+  }
+
+  &-tab {
+    flex: 1;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    color: $font-color-primary;
+  }
+
+  &-container {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-wrap {
+    position: relative;
+    height: 100%;
+  }
+
+  &-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}
