@@ -39,6 +39,11 @@
           ViewPager
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/modal">
+          Modal
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

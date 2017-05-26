@@ -12,7 +12,11 @@ import {
   SliderItem,
   ViewPager,
   ViewPagerItem,
-  ViewPagerTab
+  ViewPagerTab,
+  Modal,
+  Alert,
+  Confirm,
+  Prompt
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -35,6 +39,10 @@ Vue.component(SliderItem.name, SliderItem)
 Vue.component(ViewPager.name, ViewPager)
 Vue.component(ViewPagerItem.name, ViewPagerItem)
 Vue.component(ViewPagerTab.name, ViewPagerTab)
+Vue.component(Modal.name, Modal)
+Vue.component(Alert.name, Alert)
+Vue.component(Confirm.name, Confirm)
+Vue.component(Prompt.name, Prompt)
 
 new Vue({
   router,

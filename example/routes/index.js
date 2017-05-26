@@ -6,6 +6,7 @@ import Radiolist from '../views/Radiolist'
 import Toast from '../views/Toast'
 import Slider from '../views/Slider'
 import ViewPager from '../views/ViewPager'
+import Modal from '../views/Modal'
 
 const routes = [
   {
@@ -47,6 +48,11 @@ const routes = [
     path: '/viewpager',
     name: 'viewpager',
     component: ViewPager
+  },
+  {
+    path: '/modal',
+    name: 'modal',
+    component: Modal
   }
 ]
 
