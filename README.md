@@ -9,9 +9,9 @@ A mobile web UI library with Vue.js
 - [x] Toast
 - [x] Slider
 - [x] Viewpager
+- [x] Modal
 - [ ] Picker
 - [ ] Scrollview
-- [ ] Modal
 - [ ] Progress
 - [ ] Card
 - [ ] Action
