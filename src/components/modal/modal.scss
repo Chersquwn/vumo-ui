@@ -1,0 +1,94 @@
+@import "../../scss/config.scss";
+
+.vumo-modal {
+  &-main {
+    position: absolute;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    border-radius: 3px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+  }
+
+  &-header {
+    padding: 1rem 1.2rem .4rem;
+    font-size: 18px;
+  }
+
+  &-content {
+    min-height: 3rem;
+    text-align: center;
+    color: $font-color-tips;
+  }
+
+  &-footer {
+    display: flex;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: #d5d5d5;
+      transform: scaleY(.5);
+    }
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  &-button {
+    position: relative;
+    flex: 1;
+    padding: .8rem;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: $color-primary;
+    background-color: transparent;
+
+    &:not(:first-child)::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: #d5d5d5;
+      transform: scaleX(.5);
+    }
+  }
+
+  &-expand {
+    margin: .8rem 0;
+  }
+
+  &-input {
+    box-sizing: border-box;
+    width: 12rem;
+    padding: .4rem .6rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    outline: 0;
+    font-size: 16px;
+  }
+
+  &-enter,
+  &-leave-active {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.8);
+  }
+
+  &-enter-active,
+  &-leave-active {
+    transition: all .3s ease;
+  }
+}

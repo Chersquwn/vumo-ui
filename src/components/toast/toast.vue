@@ -15,7 +15,6 @@
     </transition>
     <div class="vumo-toast-mask" v-show="show"></div>
   </div>
-  
 </template>
 
 <script>
