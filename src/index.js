@@ -6,6 +6,7 @@ import Toast from 'components/toast'
 import { Slider, SliderItem } from 'components/slider'
 import { ViewPager, ViewPagerItem, ViewPagerTab } from 'components/view-pager'
 import { Modal, Alert, Confirm, Prompt } from 'components/modal'
+import Popup from 'components/popup'
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   Alert,
   Confirm,
   Prompt,
+  Popup,
 }
