@@ -7,6 +7,7 @@ import Toast from '../views/Toast'
 import Slider from '../views/Slider'
 import ViewPager from '../views/ViewPager'
 import Modal from '../views/Modal'
+import Popup from '../views/Popup'
 
 const routes = [
   {
@@ -53,6 +54,11 @@ const routes = [
     path: '/modal',
     name: 'modal',
     component: Modal
+  },
+  {
+    path: '/popup',
+    name: 'popup',
+    component: Popup
   }
 ]
 

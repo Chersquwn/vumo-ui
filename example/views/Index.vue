@@ -44,6 +44,11 @@
           Modal
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/popup">
+          Popup
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

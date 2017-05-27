@@ -16,7 +16,8 @@ import {
   Modal,
   Alert,
   Confirm,
-  Prompt
+  Prompt,
+  Popup
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -43,6 +44,7 @@ Vue.component(Modal.name, Modal)
 Vue.component(Alert.name, Alert)
 Vue.component(Confirm.name, Confirm)
 Vue.component(Prompt.name, Prompt)
+Vue.component(Popup.name, Popup)
 
 new Vue({
   router,
