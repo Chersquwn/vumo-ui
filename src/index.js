@@ -7,6 +7,9 @@ import { Slider, SliderItem } from 'components/slider'
 import { ViewPager, ViewPagerItem, ViewPagerTab } from 'components/view-pager'
 import { Modal, Alert, Confirm, Prompt } from 'components/modal'
 import Popup from 'components/popup'
+import Picker from 'components/picker'
+import Card from 'components/card'
+import ScrollView from 'components/scroll-view'
 
 export {
   Button,
@@ -26,4 +29,7 @@ export {
   Confirm,
   Prompt,
   Popup,
+  Picker,
+  Card,
+  ScrollView
 }

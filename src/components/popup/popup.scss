@@ -61,8 +61,24 @@
       transform: translate3d(0, 100%, 0);
     }
 
+    &-left-enter,
+    &-left-leave-active {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    &-right-enter,
+    &-right-leave-active {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+
     &-bottom-enter-active,
-    &-bottom-leave-active {
+    &-bottom-leave-active,
+    &-left-enter-active,
+    &-left-leave-active,
+    &-right-enter-active,
+    &-right-leave-active {
       transition: all .3s ease;
     }
   }

@@ -13,7 +13,7 @@
           </slot>
         </header>
         <div class="vumo-popup-content">
-          <slot name="content"></slot>
+          <slot></slot>
         </div>
       </div>
     </transition>

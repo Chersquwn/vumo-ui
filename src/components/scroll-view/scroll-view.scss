@@ -1,0 +1,9 @@
+.vumo-scroll-view {
+  overflow: hidden;
+
+  &-pull-to-refresh {
+    position: relative;
+    text-align: center;
+    transform: translateY(-100%);
+  }
+}
