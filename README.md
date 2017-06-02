@@ -10,10 +10,10 @@ A mobile web UI library with Vue.js
 - [x] Slider
 - [x] Viewpager
 - [x] Modal
+- [x] Card
 - [x] Picker
 - [ ] Scrollview
 - [ ] Progress
-- [ ] Card
 - [ ] Action
 - [ ] Sider
 - [ ] Circle

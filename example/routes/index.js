@@ -8,6 +8,9 @@ import Slider from '../views/Slider'
 import ViewPager from '../views/ViewPager'
 import Modal from '../views/Modal'
 import Popup from '../views/Popup'
+import Picker from '../views/Picker'
+import Card from '../views/Card'
+import ScrollView from '../views/ScrollView'
 
 const routes = [
   {
@@ -59,6 +62,21 @@ const routes = [
     path: '/popup',
     name: 'popup',
     component: Popup
+  },
+  {
+    path: '/picker',
+    name: 'picker',
+    component: Picker
+  },
+  {
+    path: '/card',
+    name: 'card',
+    component: Card
+  },
+  {
+    path: '/scrollview',
+    name: 'scrollview',
+    component: ScrollView
   }
 ]
 

@@ -7,15 +7,22 @@
       <mo-button size="large" @click="popup($refs.bottom)">popup bottom</mo-button>
     </div>
     <div class="group">
-      <mo-button size="large" @click="popup">confirm</mo-button>
+      <mo-button size="large" @click="popup($refs.left)">popup left</mo-button>
     </div>
     <div class="group">
-      <mo-button size="large" @click="popup">prompt</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="popup">modal</mo-button>
+      <mo-button size="large" @click="popup($refs.right)">popup right</mo-button>
     </div>
     <mo-popup ref="bottom">
+      <div slot="content">
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+      </div>
+    </mo-popup>
+    <mo-popup ref="left" position="left">
+      <div slot="content">
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+      </div>
+    </mo-popup>
+    <mo-popup ref="right" position="right">
       <div slot="content">
         <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
       </div>

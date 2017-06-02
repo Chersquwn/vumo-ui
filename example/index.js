@@ -17,7 +17,10 @@ import {
   Alert,
   Confirm,
   Prompt,
-  Popup
+  Popup,
+  Picker,
+  Card,
+  ScrollView,
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -45,6 +48,9 @@ Vue.component(Alert.name, Alert)
 Vue.component(Confirm.name, Confirm)
 Vue.component(Prompt.name, Prompt)
 Vue.component(Popup.name, Popup)
+Vue.component(Picker.name, Picker)
+Vue.component(Card.name, Card)
+Vue.component(ScrollView.name, ScrollView)
 
 new Vue({
   router,

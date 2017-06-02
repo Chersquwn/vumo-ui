@@ -49,6 +49,21 @@
           Popup
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/picker">
+          Picker
+        </router-link>
+      </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/card">
+          Card
+        </router-link>
+      </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/scrollview">
+          ScrollView
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
