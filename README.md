@@ -11,11 +11,11 @@ A mobile web UI library with Vue.js
 - [x] Viewpager
 - [x] Modal
 - [x] Card
-- [x] Picker
-- [ ] Scrollview
+- [x] Scrollview
 - [ ] Progress
 - [ ] Action
 - [ ] Sider
 - [ ] Circle
 - [ ] Chart
 - [ ] Range
+- [ ] Picker
