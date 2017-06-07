@@ -12,7 +12,7 @@ A mobile web UI library with Vue.js
 - [x] Modal
 - [x] Card
 - [x] Scrollview
-- [ ] Circle
+- [x] Circle
 - [ ] Progress
 - [ ] Action
 - [ ] Sider
