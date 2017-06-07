@@ -21,6 +21,7 @@ import {
   Picker,
   Card,
   ScrollView,
+  Circle,
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -51,6 +52,7 @@ Vue.component(Popup.name, Popup)
 Vue.component(Picker.name, Picker)
 Vue.component(Card.name, Card)
 Vue.component(ScrollView.name, ScrollView)
+Vue.component(Circle.name, Circle)
 
 new Vue({
   router,

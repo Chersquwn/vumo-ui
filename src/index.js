@@ -10,6 +10,7 @@ import Popup from 'components/popup'
 import Picker from 'components/picker'
 import Card from 'components/card'
 import ScrollView from 'components/scroll-view'
+import Circle from 'components/circle'
 
 export {
   Button,
@@ -31,5 +32,6 @@ export {
   Popup,
   Picker,
   Card,
-  ScrollView
+  ScrollView,
+  Circle
 }

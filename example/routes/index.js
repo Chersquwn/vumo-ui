@@ -11,6 +11,7 @@ import Popup from '../views/Popup'
 import Picker from '../views/Picker'
 import Card from '../views/Card'
 import ScrollView from '../views/ScrollView'
+import Circle from '../views/Circle'
 
 const routes = [
   {
@@ -77,6 +78,11 @@ const routes = [
     path: '/scrollview',
     name: 'scrollview',
     component: ScrollView
+  },
+  {
+    path: '/circle',
+    name: 'circle',
+    component: Circle
   }
 ]
 
