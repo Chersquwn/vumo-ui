@@ -1,0 +1,23 @@
+.vumo-progress {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &-container {
+    flex: 1;
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  &-bar {
+    width: 0;
+    height: 100%; 
+  }
+
+  &-prepend {
+    margin-right: 5px;
+  }
+
+  &-append {
+    margin-left: 5px;
+  }
+}

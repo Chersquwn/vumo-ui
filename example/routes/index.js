@@ -12,6 +12,7 @@ import Picker from '../views/Picker'
 import Card from '../views/Card'
 import ScrollView from '../views/ScrollView'
 import Circle from '../views/Circle'
+import Progress from '../views/Progress'
 
 const routes = [
   {
@@ -83,6 +84,11 @@ const routes = [
     path: '/circle',
     name: 'circle',
     component: Circle
+  },
+  {
+    path: '/progress',
+    name: 'progress',
+    component: Progress
   }
 ]
 

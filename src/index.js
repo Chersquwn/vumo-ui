@@ -11,6 +11,7 @@ import Picker from 'components/picker'
 import Card from 'components/card'
 import ScrollView from 'components/scroll-view'
 import Circle from 'components/circle'
+import Progress from 'components/progress'
 
 export {
   Button,
@@ -33,5 +34,6 @@ export {
   Picker,
   Card,
   ScrollView,
-  Circle
+  Circle,
+  Progress
 }

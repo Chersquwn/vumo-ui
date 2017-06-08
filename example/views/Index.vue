@@ -69,6 +69,11 @@
           Circle
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/progress">
+          Progress
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
