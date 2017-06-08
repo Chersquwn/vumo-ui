@@ -3,18 +3,19 @@ A mobile web UI library with Vue.js
 
 ## Progress
 - [x] Button
-- [x] Radiolist
+- [x] Card
 - [x] Checklist
+- [x] Circle
+- [x] Modal
+- [x] Popup
+- [x] Progress
+- [x] Radiolist
+- [x] ScrollView
+- [x] Slider
 - [x] Switch
 - [x] Toast
-- [x] Slider
-- [x] Viewpager
-- [x] Modal
-- [x] Card
-- [x] Scrollview
-- [x] Circle
-- [ ] Progress
-- [ ] Action
+- [x] ViewPager
+- [ ] ActionSheet
 - [ ] Sider
 - [ ] Chart
 - [ ] Range

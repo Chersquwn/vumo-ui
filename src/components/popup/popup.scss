@@ -12,7 +12,6 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    height: 44px;
 
     &:after {
       content: "";
@@ -27,6 +26,7 @@
   }
 
   &-button {
+    height: 44px;
     padding: 0 20px;
     border: 0;
     outline: 0;

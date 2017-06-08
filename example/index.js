@@ -23,6 +23,7 @@ import {
   ScrollView,
   Circle,
   Progress,
+  ActionSheet
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -55,6 +56,7 @@ Vue.component(Card.name, Card)
 Vue.component(ScrollView.name, ScrollView)
 Vue.component(Circle.name, Circle)
 Vue.component(Progress.name, Progress)
+Vue.component(ActionSheet.name, ActionSheet)
 
 new Vue({
   router,

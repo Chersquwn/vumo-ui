@@ -12,6 +12,7 @@ import Card from 'components/card'
 import ScrollView from 'components/scroll-view'
 import Circle from 'components/circle'
 import Progress from 'components/progress'
+import ActionSheet from 'components/action-sheet'
 
 export {
   Button,
@@ -35,5 +36,6 @@ export {
   Card,
   ScrollView,
   Circle,
-  Progress
+  Progress,
+  ActionSheet
 }

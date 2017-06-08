@@ -74,6 +74,11 @@
           Progress
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/actionsheet">
+          ActionSheet
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

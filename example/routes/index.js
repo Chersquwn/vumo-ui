@@ -13,6 +13,7 @@ import Card from '../views/Card'
 import ScrollView from '../views/ScrollView'
 import Circle from '../views/Circle'
 import Progress from '../views/Progress'
+import ActionSheet from '../views/ActionSheet'
 
 const routes = [
   {
@@ -89,7 +90,12 @@ const routes = [
     path: '/progress',
     name: 'progress',
     component: Progress
-  }
+  },
+  {
+    path: '/actionsheet',
+    name: 'actionsheet',
+    component: ActionSheet
+  },
 ]
 
 export default routes
