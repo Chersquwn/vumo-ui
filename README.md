@@ -15,7 +15,7 @@ A mobile web UI library with Vue.js
 - [x] Switch
 - [x] Toast
 - [x] ViewPager
-- [ ] ActionSheet
+- [x] ActionSheet
 - [ ] Sider
 - [ ] Chart
 - [ ] Range
