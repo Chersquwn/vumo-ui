@@ -1,0 +1,9 @@
+%border {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ddd;
+  transform: scaleY(.5);
+}

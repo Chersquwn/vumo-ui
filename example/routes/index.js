@@ -14,6 +14,7 @@ import ScrollView from '../views/ScrollView'
 import Circle from '../views/Circle'
 import Progress from '../views/Progress'
 import ActionSheet from '../views/ActionSheet'
+import Cell from '../views/Cell'
 
 const routes = [
   {
@@ -96,6 +97,11 @@ const routes = [
     name: 'actionsheet',
     component: ActionSheet
   },
+  {
+    path: '/cell',
+    name: 'cell',
+    component: Cell
+  }
 ]
 
 export default routes

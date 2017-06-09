@@ -13,6 +13,7 @@ import ScrollView from 'components/scroll-view'
 import Circle from 'components/circle'
 import Progress from 'components/progress'
 import ActionSheet from 'components/action-sheet'
+import { Cell, CellSlider } from 'components/cell'
 
 export {
   Button,
@@ -37,5 +38,7 @@ export {
   ScrollView,
   Circle,
   Progress,
-  ActionSheet
+  ActionSheet,
+  Cell,
+  CellSlider
 }

@@ -79,6 +79,11 @@
           ActionSheet
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/cell">
+          Cell
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

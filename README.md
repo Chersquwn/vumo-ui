@@ -2,6 +2,7 @@
 A mobile web UI library with Vue.js
 
 ## Progress
+- [x] ActionSheet
 - [x] Button
 - [x] Card
 - [x] Checklist
@@ -15,8 +16,8 @@ A mobile web UI library with Vue.js
 - [x] Switch
 - [x] Toast
 - [x] ViewPager
-- [x] ActionSheet
-- [ ] Sider
+- [x] Cell
+- [x] CellSlider
 - [ ] Chart
 - [ ] Range
 - [ ] Picker
