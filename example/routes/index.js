@@ -15,6 +15,7 @@ import Circle from '../views/Circle'
 import Progress from '../views/Progress'
 import ActionSheet from '../views/ActionSheet'
 import Cell from '../views/Cell'
+import Badge from '../views/Badge'
 
 const routes = [
   {
@@ -101,6 +102,11 @@ const routes = [
     path: '/cell',
     name: 'cell',
     component: Cell
+  },
+  {
+    path: '/badge',
+    name: 'badge',
+    component: Badge
   }
 ]
 

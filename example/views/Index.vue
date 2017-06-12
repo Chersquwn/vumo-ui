@@ -84,6 +84,11 @@
           Cell
         </router-link>
       </div>
+      <div class="components-list-item">
+        <router-link class="link" to="/badge">
+          Badge
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

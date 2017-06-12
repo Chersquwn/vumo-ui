@@ -14,6 +14,7 @@ import Circle from 'components/circle'
 import Progress from 'components/progress'
 import ActionSheet from 'components/action-sheet'
 import { Cell, CellSlider } from 'components/cell'
+import Badge from 'components/badge'
 
 export {
   Button,
@@ -40,5 +41,6 @@ export {
   Progress,
   ActionSheet,
   Cell,
-  CellSlider
+  CellSlider,
+  Badge
 }

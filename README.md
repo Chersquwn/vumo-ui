@@ -3,6 +3,7 @@ A mobile web UI library with Vue.js
 
 ## Progress
 - [x] ActionSheet
+- [x] Badge
 - [x] Button
 - [x] Card
 - [x] Checklist

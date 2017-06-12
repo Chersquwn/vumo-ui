@@ -25,7 +25,8 @@ import {
   Progress,
   ActionSheet,
   Cell,
-  CellSlider
+  CellSlider,
+  Badge
 } from 'src'
 import routes from './routes'
 import App from './App'
@@ -61,6 +62,7 @@ Vue.component(Progress.name, Progress)
 Vue.component(ActionSheet.name, ActionSheet)
 Vue.component(Cell.name, Cell)
 Vue.component(CellSlider.name, CellSlider)
+Vue.component(Badge.name, Badge)
 
 new Vue({
   router,
