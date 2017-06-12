@@ -38,8 +38,8 @@
       height: .6rem;
       border-radius: .6rem;
       background-color: transparent;
-      transform: translate(-50%, -50%);
-      transition: background-color .3s ease;
+      transform: translate(-50%, -50%) scale(.3);
+      transition: background-color .3s ease, transform .3s ease;
     }
 
     &:checked {
@@ -47,6 +47,7 @@
 
       &::before {
         background-color: $color-primary;
+        transform: translate(-50%, -50%) scale(1);
       }
     }
 
