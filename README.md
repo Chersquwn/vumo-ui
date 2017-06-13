@@ -6,6 +6,8 @@ A mobile web UI library with Vue.js
 - [x] Badge
 - [x] Button
 - [x] Card
+- [x] Cell
+- [x] CellSlider
 - [x] Checklist
 - [x] Circle
 - [x] Modal
@@ -17,8 +19,6 @@ A mobile web UI library with Vue.js
 - [x] Switch
 - [x] Toast
 - [x] ViewPager
-- [x] Cell
-- [x] CellSlider
 - [ ] Chart
 - [ ] Range
 - [ ] Picker

@@ -1,20 +1,27 @@
 <template>
   <div class="page">
-    <header>
+    <page-header>
       ScrollView
-    </header>
-    <div class="group">
-      <mo-scroll-view @refresh="update" @scrollLoad="loadmore">
-        <div id="list">
-          <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
-        </div>
-      </mo-scroll-view>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-scroll-view @refresh="update" @scrollLoad="loadmore">
+          <div id="list">
+            <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+          </div>
+        </mo-scroll-view>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   methods: {
     update(done) {
       setTimeout(function() {
@@ -49,13 +56,6 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-}
-header {
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 }
 .group {
   flex: 1;

@@ -1,23 +1,30 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Switch
-    </header>
-    <div class="group">
-      <mo-switch v-model="value">
-        {{ value }}
-      </mo-switch>
-    </div>
-    <div class="group">
-      <mo-switch v-model="value2" disabled>
-        禁用
-      </mo-switch>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-switch v-model="value">
+          {{ value }}
+        </mo-switch>
+      </div>
+      <div class="group">
+        <mo-switch v-model="value2" disabled>
+          禁用
+        </mo-switch>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       value: false,
@@ -28,9 +35,6 @@ export default {
 </script>
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

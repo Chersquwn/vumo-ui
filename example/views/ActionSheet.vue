@@ -1,17 +1,24 @@
 <template>
   <div>
-    <header>
+    <page-header>
       ActionSheet
-    </header>
-    <div class="group">
-      <mo-button size="large" @click="popup()">action sheet</mo-button>
-    </div>
-    <mo-action-sheet ref="actionsheet" :actions="actions" cancelText="取消"></mo-action-sheet>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-button size="large" @click="popup()">action sheet</mo-button>
+      </div>
+      <mo-action-sheet ref="actionsheet" :actions="actions" cancelText="取消"></mo-action-sheet>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       actions:[{
@@ -36,9 +43,6 @@ export default {
 </script>
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

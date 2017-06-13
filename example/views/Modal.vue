@@ -1,20 +1,22 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Modal
-    </header>
-    <div class="group">
-      <mo-button size="large" @click="openAlert">alert</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="openConfirm">confirm</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="openPrompt">prompt</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="openModal">modal</mo-button>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-button size="large" @click="openAlert">alert</mo-button>
+      </div>
+      <div class="group">
+        <mo-button size="large" @click="openConfirm">confirm</mo-button>
+      </div>
+      <div class="group">
+        <mo-button size="large" @click="openPrompt">prompt</mo-button>
+      </div>
+      <div class="group">
+        <mo-button size="large" @click="openModal">modal</mo-button>
+      </div>
+    </main>
     <mo-alert 
       ref="alert" 
       title="Alert" 
@@ -55,7 +57,12 @@
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       input: ''
@@ -86,9 +93,6 @@ export default {
 </script>
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

@@ -1,19 +1,26 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Circle
-    </header>
-    <div class="group">
-      <mo-circle :percent="percent"></mo-circle>
-      <mo-button @click="count">
-        +20%
-      </mo-button>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-circle :percent="percent"></mo-circle>
+        <mo-button @click="count">
+          +20%
+        </mo-button>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       percent: 0
@@ -29,9 +36,6 @@ export default {
 
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

@@ -1,116 +1,98 @@
 <template>
-  <div>
-    <header>
-      vumo-ui demo
-    </header>
-    <div class="components-list">
-      <div class="components-list-item">
-        <router-link class="link" to="/buttons">
-          Buttons
-        </router-link>
+  <div class="page">
+    <page-header>
+      Demo
+    </page-header>
+    <main class="page-content">
+      <div class="components-list">
+        <div class="components-list-item" v-for="(component, index) in components" v-if="index > 0">
+          <router-link class="link" :to="component.path">
+            {{ component.name }}
+          </router-link>
+        </div>
       </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/switch">
-          Switch
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/checklist">
-          Checklist
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/radiolist">
-          Radiolist
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/toast">
-          Toast
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/slider">
-          Slider
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/viewpager">
-          ViewPager
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/modal">
-          Modal
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/popup">
-          Popup
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/picker">
-          Picker
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/card">
-          Card
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/scrollview">
-          ScrollView
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/circle">
-          Circle
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/progress">
-          Progress
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/actionsheet">
-          ActionSheet
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/cell">
-          Cell
-        </router-link>
-      </div>
-      <div class="components-list-item">
-        <router-link class="link" to="/badge">
-          Badge
-        </router-link>
-      </div>
-    </div>
+    </main>
   </div>
 </template>
 
-<style lang="scss">
-header {
-  text-align: center;
-}
+<script>
+import routes from '../routes'
+import PageHeader from '../components/Header'
 
+export default {
+  data() {
+    return {
+      components: routes
+    }
+  },
+  components: {
+    PageHeader
+  }
+}
+</script>
+
+
+<style lang="scss">
 .components-list {
-  margin-top: 10px;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    transform: scaleY(.5);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    transform: scaleY(.5);
+  }
 
   &-item {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #eee;
+    position: relative;
+    width: 33.3333%;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      background-color: #ddd;
+      transform: scaleX(.5);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #ddd;
+      transform: scaleY(.5);
+    }
   }
 
   .link {
     display: block;
+    padding: 30px 10px;
     text-decoration: none;
+    color: #333;
   }
 }
 </style>

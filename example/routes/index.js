@@ -20,93 +20,93 @@ import Badge from '../views/Badge'
 const routes = [
   {
     path: '/',
-    name: 'index',
+    name: 'Index',
     component: Index
   },
   {
-    path: '/buttons',
-    name: 'buttons',
-    component: Buttons
-  },
-  {
-    path: '/switch',
-    name: 'switch',
-    component: Switch
-  },
-  {
-    path: '/checklist',
-    name: 'checklist',
-    component: Checklist
-  },
-  {
-    path: '/radiolist',
-    name: 'radiolist',
-    component: Radiolist
-  },
-  {
-    path: '/toast',
-    name: 'toast',
-    component: Toast
-  },
-  {
-    path: '/slider',
-    name: 'slider',
-    component: Slider
-  },
-  {
-    path: '/viewpager',
-    name: 'viewpager',
-    component: ViewPager
-  },
-  {
-    path: '/modal',
-    name: 'modal',
-    component: Modal
-  },
-  {
-    path: '/popup',
-    name: 'popup',
-    component: Popup
-  },
-  {
-    path: '/picker',
-    name: 'picker',
-    component: Picker
-  },
-  {
-    path: '/card',
-    name: 'card',
-    component: Card
-  },
-  {
-    path: '/scrollview',
-    name: 'scrollview',
-    component: ScrollView
-  },
-  {
-    path: '/circle',
-    name: 'circle',
-    component: Circle
-  },
-  {
-    path: '/progress',
-    name: 'progress',
-    component: Progress
-  },
-  {
     path: '/actionsheet',
-    name: 'actionsheet',
+    name: 'ActionSheet',
     component: ActionSheet
   },
   {
+    path: '/badge',
+    name: 'Badge',
+    component: Badge
+  },
+  {
+    path: '/buttons',
+    name: 'Buttons',
+    component: Buttons
+  },
+  {
+    path: '/card',
+    name: 'Card',
+    component: Card
+  },
+  {
     path: '/cell',
-    name: 'cell',
+    name: 'Cell',
     component: Cell
   },
   {
-    path: '/badge',
-    name: 'badge',
-    component: Badge
+    path: '/checklist',
+    name: 'Checklist',
+    component: Checklist
+  },
+  {
+    path: '/circle',
+    name: 'Circle',
+    component: Circle
+  },
+  {
+    path: '/modal',
+    name: 'Modal',
+    component: Modal
+  },
+  {
+    path: '/picker',
+    name: 'Picker',
+    component: Picker
+  },
+  {
+    path: '/popup',
+    name: 'Popup',
+    component: Popup
+  },
+  {
+    path: '/progress',
+    name: 'Progress',
+    component: Progress
+  },
+  {
+    path: '/radiolist',
+    name: 'Radiolist',
+    component: Radiolist
+  },
+  {
+    path: '/scrollview',
+    name: 'ScrollView',
+    component: ScrollView
+  },
+  {
+    path: '/slider',
+    name: 'Slider',
+    component: Slider
+  },
+  {
+    path: '/switch',
+    name: 'Switch',
+    component: Switch
+  },
+  {
+    path: '/toast',
+    name: 'Toast',
+    component: Toast
+  },
+  {
+    path: '/viewpager',
+    name: 'ViewPager',
+    component: ViewPager
   }
 ]
 

@@ -1,21 +1,28 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Progress
-    </header>
-    <div class="group">
-      <mo-progress :percent="percent">
-        <span slot="append">{{ percent + '%' }}</span>
-      </mo-progress>
-      <mo-button @click="count">
-        +20%
-      </mo-button>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-progress :percent="percent">
+          <span slot="append">{{ percent + '%' }}</span>
+        </mo-progress>
+        <mo-button @click="count">
+          +20%
+        </mo-button>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       percent: 20
@@ -31,9 +38,6 @@ export default {
 
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

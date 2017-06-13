@@ -1,26 +1,33 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Checklist
-    </header>
-    <div class="group">
-      <mo-checkbox>
-        选项A
-      </mo-checkbox>
-    </div>
-    <div class="group">
-      <mo-checklist :options="options1" v-model="value1"></mo-checklist>
-      {{ value1 }}
-    </div>
-    <div class="group">
-      <mo-checklist :options="options2" v-model="value2"></mo-checklist>
-      {{ value2 }}
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-checkbox>
+          选项A
+        </mo-checkbox>
+      </div>
+      <div class="group">
+        <mo-checklist :options="options1" v-model="value1"></mo-checklist>
+        {{ value1 }}
+      </div>
+      <div class="group">
+        <mo-checklist :options="options2" v-model="value2"></mo-checklist>
+        {{ value2 }}
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       options1: [
@@ -60,9 +67,6 @@ export default {
 </script>
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;

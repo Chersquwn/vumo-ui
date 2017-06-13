@@ -1,17 +1,19 @@
 <template>
   <div>
-    <header>
+    <page-header>
       Popup
-    </header>
-    <div class="group">
-      <mo-button size="large" @click="popup($refs.bottom)">popup bottom</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="popup($refs.left)">popup left</mo-button>
-    </div>
-    <div class="group">
-      <mo-button size="large" @click="popup($refs.right)">popup right</mo-button>
-    </div>
+    </page-header>
+    <main class="page-content">
+      <div class="group">
+        <mo-button size="large" @click="popup($refs.bottom)">popup bottom</mo-button>
+      </div>
+      <div class="group">
+        <mo-button size="large" @click="popup($refs.left)">popup left</mo-button>
+      </div>
+      <div class="group">
+        <mo-button size="large" @click="popup($refs.right)">popup right</mo-button>
+      </div>
+    </main>
     <mo-popup ref="bottom">
       <div slot="content">
         <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
@@ -31,7 +33,12 @@
 </template>
 
 <script>
+import PageHeader from '../components/Header'
+
 export default {
+  components: {
+    PageHeader
+  },
   data() {
     return {
       
@@ -46,9 +53,6 @@ export default {
 </script>
 
 <style lang="scss">
-header {
-  text-align: center;
-}
 .group {
   margin: 10px 0;
   vertical-align: middle;
