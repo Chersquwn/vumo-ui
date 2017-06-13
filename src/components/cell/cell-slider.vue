@@ -119,7 +119,8 @@ export default {
     handleClick(action) {
       if (action.methods && typeof action.methods === 'function') {
         action.methods(action)
-        this.translateTo(0)
+        this.currentPos = 0
+        this.translateTo(this.currentPos)
       }
     }
   }
