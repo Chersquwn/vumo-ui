@@ -36,6 +36,7 @@
     "fastclick": "^1.0.6"
   },
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.conf.js"
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "build:demo": "rimraf example/dist && webpack --config build/webpack.demo.conf.js"
   }
 }
