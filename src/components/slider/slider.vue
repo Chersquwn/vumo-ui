@@ -74,6 +74,9 @@ export default {
     this.adjustPosition()
     this.auto && this.run()
   },
+  destroyed() {
+    this.stop()
+  },
   methods: {
     onTouchStart(e) {
       const touch = e.touches[0]
