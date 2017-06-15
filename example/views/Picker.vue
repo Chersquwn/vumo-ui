@@ -4,10 +4,13 @@
       Picker
     </page-header>
     <main class="page-content">
-      <div class="group">
+      <!--<div class="group">
         <mo-button size="large" @click="popup()">popup bottom</mo-button>
-      </div>
-      <mo-picker ref="picker" :data="json" :column="3">
+      </div>-->
+      <mo-picker ref="picker1" :data="json1">
+        
+      </mo-picker>
+      <mo-picker ref="picker2" :data="json2" :column="3">
         <div slot="content">
           <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
         </div>
@@ -25,7 +28,12 @@ export default {
   },
   data() {
     return {
-      json: [
+      json1: [
+        ['I', 'You', 'He', 'She'],
+        [1, 2, 3, 4, 5, 6],
+        ['A', 'B', 'C']
+      ],
+      json2: [
         {
           value: '广东',
           children: [

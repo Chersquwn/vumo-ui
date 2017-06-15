@@ -1,0 +1,67 @@
+.vumo-picker {
+  $item-height: 36px;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-column {
+    flex: 1;
+  }
+
+  &-list {
+    list-style: none;
+  }
+
+  &-item {
+    text-align: center;
+    height: $item-height;
+    line-height: $item-height;
+  }
+
+  &-indicator {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: $item-height;
+    background-color: transparent;
+    transform: translateY(-50%);
+
+    &::before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #ddd;
+      transform: scaleY(.5);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &-mask {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0)),
+      linear-gradient(to top, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
+    background-position: top, bottom;
+    background-size: 100% 110px;
+    background-repeat: no-repeat;
+  }
+}
