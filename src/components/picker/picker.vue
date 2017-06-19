@@ -2,17 +2,20 @@
   <div class="vumo-picker">
     <div 
       class="vumo-picker-container"
-      :style="{height: height + 'px'}">
+      :style="{height: (itemHeight * count) + 'px'}">
       <div class="vumo-picker-mask"></div>
       <div class="vumo-picker-indicator"></div>
-      <div class="vumo-picker-column" :data-column="index" v-for="index in column" :id="`vumo-picker-${uuid}-${index}`">
-        <template v-if="Array.isArray(data[0])">
-          <ul class="vumo-picker-list">
-            <li class="vumo-picker-item" v-for="item in data[index - 1]">
-              <span>{{ item }}</span>
-            </li>
-          </ul>
-        </template>
+      <div 
+        class="vumo-picker-column" 
+        :data-column="index"  
+        :id="`vumo-picker-${uuid}-${index}`"
+        v-for="index in column">
+        <picker-slot 
+          :data="slotData[index - 1]"
+          :height="itemHeight"
+          :pos="columnData[index - 1]"
+          :count="count">
+        </picker-slot>
       </div>
     </div>
   </div>
@@ -20,11 +23,12 @@
 
 <script>
 import Popup from '../popup'
+import PickerSlot from './picker-slot'
 
 export default {
   name: 'mo-picker',
   components: {
-    Popup
+    PickerSlot
   },
   props: {
     data: {
@@ -39,32 +43,60 @@ export default {
         return this.data.length
       }
     },
-    height: {
+    value: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    itemHeight: {
       type: Number,
-      default: 240
+      default: 36
+    },
+    count: {
+      type: Number,
+      default: 7
     }
   },
   mounted() {
-    this.uuid = Math.random().toString(16).slice(3, 8)
+    
   },
   computed: {
-    
+    columnData() {
+      const arr = []
+
+      for (let i = 0; i < this.data.length; i++) {
+        const idx = this.data[i].indexOf(this.value[i])
+
+        if (idx !== -1) {
+          arr[i] = (Math.floor(this.count / 2) - idx) * this.itemHeight
+        } else {
+          arr[i] = Math.floor(this.count / 2) * this.itemHeight
+        }
+      }
+      return arr
+    },
+    currentValue() {
+      return this.value
+    },
+    slotData() {
+      let result
+
+      if (Array.isArray(this.data[0])) {
+        result = this.data
+      }
+
+      return result
+    }
   },
   data() {
     return {
-      uuid: ''
+      uuid: Math.random().toString(16).slice(3, 8),
     }
   },
   methods: {
     open() {
       this.$refs.picker.open()
-    },
-    render() {
-      for (let i = 0; i < this.data.length; i++) {
-        if (Array.isArray(this.data[i])) {
-
-        }
-      }
     }
   }
 }

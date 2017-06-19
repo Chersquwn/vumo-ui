@@ -12,24 +12,26 @@
     flex: 1;
   }
 
+  &-slot {
+    height: 100%;
+  }
+
   &-list {
     list-style: none;
   }
 
   &-item {
     text-align: center;
-    height: $item-height;
-    line-height: $item-height;
   }
 
   &-indicator {
     position: absolute;
-    z-index: 1;
     top: 50%;
     width: 100%;
     height: $item-height;
     background-color: transparent;
     transform: translateY(-50%);
+    pointer-events: none;
 
     &::before,
     &:after {
@@ -63,5 +65,10 @@
     background-position: top, bottom;
     background-size: 100% 110px;
     background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  &-animating {
+    transition: transform .3s ease;
   }
 }
