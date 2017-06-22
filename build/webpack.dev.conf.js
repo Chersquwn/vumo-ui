@@ -3,6 +3,7 @@ var merge = require('webpack-merge')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var baseWebpackConf = require('./webpack.base.conf')
+var openBrowserPlugin = require('open-browser-webpack-plugin')
 
 module.exports = merge(baseWebpackConf, {
 
@@ -32,6 +33,9 @@ module.exports = merge(baseWebpackConf, {
     }),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new openBrowserPlugin({
+      url: 'http://localhost:8080'
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, '..', 'example/index.html'),
