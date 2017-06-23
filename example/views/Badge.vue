@@ -8,7 +8,7 @@
         <mo-badge color="#f44336"></mo-badge>
         <mo-badge value="99"></mo-badge>
         <mo-badge value="99" size="small"></mo-badge>
-        <mo-badge value="99" size="large"></mo-badge>
+        <mo-badge value="99" size="large" draggable @drag="handleDrag"></mo-badge>
       </div>
     </main>
   </div>
@@ -20,6 +20,11 @@ import PageHeader from '../components/Header'
 export default {
   components: {
     PageHeader
+  },
+  methods: {
+    handleDrag() {
+      console.log('delete')
+    }
   }
 }
 </script>
