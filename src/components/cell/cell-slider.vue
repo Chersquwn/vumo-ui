@@ -15,7 +15,8 @@
       ref="append">
       <a 
         class="vumo-cell-slider-button" 
-        v-for="action in actions"
+        v-for="(action, index) in actions"
+        :key="index"
         :style="action.style"
         @click="handleClick(action)">
         {{ action.name }}

@@ -13,6 +13,7 @@
       <span 
         class="vumo-slider-nav-item" 
         v-for="(item, $index) in queue"
+        :key="$index"
         :data-index="{$index}"
         :class="{ 'is-active': $index === index }"></span>
     </div>

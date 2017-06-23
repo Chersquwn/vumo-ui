@@ -13,7 +13,8 @@
       ref="pickerSlot">
       <li 
         class="vumo-picker-item"
-        v-for="item in data"
+        v-for="(item, index) in data"
+        :key="index"
         :style="{
           height: height + 'px', 
           'line-height': height + 'px'

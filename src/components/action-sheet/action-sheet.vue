@@ -6,7 +6,11 @@
       </div>
       <div class="vumo-action-sheet-content">
         <ul class="vumo-action-sheet-list">
-          <li class="vumo-action-sheet-item" v-for="action in actions" @click="handleAction(action)">
+          <li 
+            class="vumo-action-sheet-item" 
+            v-for="(action, index) in actions" 
+            :key="index"
+            @click="handleAction(action)">
             {{ action.name }}
           </li>
         </ul>
