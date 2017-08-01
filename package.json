@@ -38,6 +38,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
-    "build:demo": "rimraf example/dist && webpack --config build/webpack.demo.conf.js"
+    "build:demo": "rimraf example/dist && webpack --config build/webpack.demo.conf.js",
+    "build": "rimraf dist && webpack --config build/webpack.prod.conf.js"
   }
 }
